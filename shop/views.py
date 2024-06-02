@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Contractmodel
 
 # Create your views here.
 
@@ -11,7 +12,8 @@ def about(request):
     return render(request,'about.html')
 
 def contact(request):
-    return render(request,'contact.html')
+    c=Contractmodel.objects.all()
+    return render(request,'contact.html',{"c":c})
 
 def faq(request):
     return render(request,faq.html)

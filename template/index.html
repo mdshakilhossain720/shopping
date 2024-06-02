@@ -8,7 +8,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Tooplate's Little Fashion</title>
+        <title>Techlab Fashion</title>
 
         <!-- CSS FILES -->
         <link rel="preconnect" href="{% static 'https://fonts.googleapis.com' %}">
@@ -61,7 +61,7 @@ https://www.tooplate.com/view/2127-little-fashion
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav mx-auto">
                             <li class="nav-item">
-                                <a class="nav-link active" href="index.html">Home</a>
+                                <a class="nav-link active" href="{% url 'home' %}">Home</a>
                             </li>
 
                             <li class="nav-item">
@@ -69,22 +69,22 @@ https://www.tooplate.com/view/2127-little-fashion
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="products.html">Products</a>
+                                <a class="nav-link" href="{% url 'products' %}">Products</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="faq.html">FAQs</a>
+                                <a class="nav-link" href="{% url 'faq' %}">FAQs</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
+                                <a class="nav-link" href="{% url 'contract' %}">Contact</a>
                             </li>
                         </ul>
 
                         <div class="d-none d-lg-block">
-                            <a href="sign-in.html" class="bi-person custom-icon me-3"></a>
+                            <a href="{% url 'signup' %}" class="bi-person custom-icon me-3"></a>
 
-                            <a href="product-detail.html" class="bi-bag custom-icon"></a>
+                            <a href="{% url 'productdetais' %}" class="bi-bag custom-icon"></a>
                         </div>
                     </div>
                 </div>
